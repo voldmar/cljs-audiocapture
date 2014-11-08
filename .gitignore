@@ -1,0 +1,12 @@
+pom.xml
+*jar
+/lib/
+/classes/
+/out/
+/target/
+.nrepl-port
+.lein-deps-sum
+.lein-repl-history
+.lein-plugins/
+cljs_audiocapture.js
+cljs_audiocapture.min.js
