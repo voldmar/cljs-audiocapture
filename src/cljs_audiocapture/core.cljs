@@ -1,4 +1,4 @@
-(ns cljs-audiocapture
+(ns cljs-audiocapture.core
   (:require
     [cljs.core.async.impl.protocols :as p]
     [cljs.core.async :as async])

@@ -7,11 +7,11 @@ ClojureScript core.async interface for capturing audio in modern browsers
 ## Installation
 
 cljs-audio is available in Maven Central. Add it to your `:dependencies `
-in your Leiningen `project.clj`:
+in your Leiningen `project.clj` or in your `build.boot`:
 
 
 ```clojure
-[cljs-audiocapture "0.1.0"]
+[cljs-audiocapture "0.1.4"]
 ```
 
 ## Compatibility
@@ -43,7 +43,7 @@ has access to.
 (ns cljs-audiocapture-demo
   (:require
     [cljs.core.async :as async]
-    [cljs-audiocapture :refer [audio]])
+    [cljs-audiocapture.core :refer [audio]])
   (:require-macros
     [cljs.core.async.macros :refer [go]]))
 
