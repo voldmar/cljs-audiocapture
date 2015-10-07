@@ -200,11 +200,13 @@
   You can use map with keys
     :buffer - core.async buffer to use
     :swf-uri - URI to Flash fallback"
-  [{:keys [buffer swf-uri]
-    :or {:buffer nil :swf-uri "audiocapture.swf"}}]
-  (cond
-    (exists? js/navigator.getUserMedia) (capture-audio-native buffer)
-    (exists? js/navigator.webkitGetUserMedia) (capture-audio-native buffer)
-    (exists? js/navigator.mozGetUserMedia) (capture-audio-native buffer)
-    :else (capture-audio-flash buffer swf-uri)))
+  ([]
+   (capture-audio {}))
+  ([{:keys [buffer swf-uri]
+     :or {:buffer nil :swf-uri "audiocapture.swf"}}]
+   (cond
+     (exists? js/navigator.getUserMedia) (capture-audio-native buffer)
+     (exists? js/navigator.webkitGetUserMedia) (capture-audio-native buffer)
+     (exists? js/navigator.mozGetUserMedia) (capture-audio-native buffer)
+     :else (capture-audio-flash buffer swf-uri))))
 
