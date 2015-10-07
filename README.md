@@ -43,7 +43,7 @@ has access to.
 (ns cljs-audiocapture-demo
   (:require
     [cljs.core.async :as async]
-    [cljs-audiocapture.core :refer [audio]])
+    [cljs-audiocapture.core :refer [capture-audio]])
   (:require-macros
     [cljs.core.async.macros :refer [go]]))
 
