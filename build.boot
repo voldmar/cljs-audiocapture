@@ -1,5 +1,5 @@
 (set-env!
-  :source-paths   #{"src"}
+  :source-paths #{"src"}
   :dependencies '[[adzerk/boot-cljs       "1.7.48-5" :scope "test"]
                   [adzerk/boot-cljs-repl  "0.2.0" :scope "test"]
                   [adzerk/boot-reload     "0.4.0" :scope "test"]
@@ -18,7 +18,6 @@
 (bootlaces! +version+)
 
 (task-options!
-  push {:ensure-clean false}
   pom  {:project     'cljs-audiocapture 
         :version     +version+
         :description "ClojureScript core.async interface to capture audio"
@@ -26,7 +25,6 @@
         :license {"Eclipse Public License" "http://www.eclipse.org/legal/epl-v10.html"}})
 
 (deftask build []
-  (set-env! :source-paths #{"src"})
   (comp (cljs :optimizations :advanced
               :compiler-options {:preamble ["swfobject.js"]
                                  :externs  ["externs/w3c_audio.js"
