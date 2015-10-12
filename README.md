@@ -93,4 +93,13 @@ has access to.
             (recur (dec counter))))))))
 ```
 
+
+## License
+
+Source Copyright © 2015 Vladimir Epifanov of Yandex. Distributed under
+the Eclipse Public License, which can be found in [LICENSE.md](LICENSE.md)
+at the root of this distribution. By using this software in any fashion,
+you are agreeing to be bound by the terms of this license. You must not remove
+this notice, or any other, from this software.
+
 [error]: http://webrtchacks.com/getusermedia/
