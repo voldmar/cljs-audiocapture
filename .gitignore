@@ -10,3 +10,5 @@ pom.xml
 .lein-plugins/
 cljs_audiocapture.js
 cljs_audiocapture.min.js
+.lein-failures
+gpg.edn
