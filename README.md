@@ -14,6 +14,14 @@ in your Leiningen `project.clj` or in your `build.boot`:
 [cljs-audiocapture "0.1.4"]
 ```
 
+If you use boot to build your project, use `sift` task to add `audiocapture.swf`
+to your project:
+
+```clojure
+(sift :add-jar {'cljs-audiocapture #"^audiocapture\.swf"})
+```
+
+
 ## Compatibility
 
 Tested against lastest stable versions of Chromium-based browsers,
@@ -37,6 +45,7 @@ You can record it and wrap to RIFF WAV or process other way. To pause just put
 
 To use flash fallback you should put `audiocapture.swf` to place your script
 has access to.
+
 
 
 ```clojure
