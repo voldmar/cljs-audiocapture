@@ -22,6 +22,7 @@
   pom  {:project     'cljs-audiocapture 
         :version     +version+
         :description "ClojureScript core.async interface to capture audio"
+        :scm  {:url "https://github.com/voldmar/cljs-audiocapture"}
         :url "https://github.com/voldmar/cljs-audiocapture"
         :license {"Eclipse Public License" "http://www.eclipse.org/legal/epl-v10.html"}})
 
